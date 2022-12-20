@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    font-family: 'Rufina', serif;
+    height: 700px;
+
+}
+
+/*--======================================start nav=============================================================*/
+
+
+.navbar{
+    padding: 15px 35px;
+    background-color: white !important;
+    
+}
+ 
+.navbar li{
+    margin-right: 35px;
+}
+.navbar li a{
+    padding: 14px;
+    color: #000019 !important;
+}   
+.navbar li a:hover{
+    color: #fc4503 !important; 
+}
+
+
+
+
+
+/*--======================================end nav=============================================================*/
+
+
+
+
+
+
+
+
+
+/*======================================start header=============================================================-*/
+header{
+    background-image: url("../project/img/h1_hero.webp");
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 89px;
+}
+
+header .header-des{
+    position: relative;
+}
+
+header .header-des .info{
+    position: absolute;
+    transform: translate(-31px, 110px);
+}
+
+header .header-des .info span{
+    color: #ec5b53;
+    font-size: 19px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+header .header-des .info h2{
+    color: #002d5b;
+    font-family: "rufina",serif;
+    font-size: 66px;
+    font-weight: 900;
+    width: 60%;
+    margin-bottom: 25px;
+
+}
+header .header-des .info p{
+    color: #464d65;
+    margin-bottom: 40px;
+    width: 50%;
+    font-weight: 250;
+    line-height: 25px;
+    font-size: 18px;
+    margin-bottom: 42px;
+    font-family: "rubik",sans-serif;
+}
+
+/*=========================end header=======================*/
+
+
+
+/*==========================================start about=============================*/
+.about{
+    margin-right: 0%;
+    padding: 150px 0 48px 0;
+}
+
+.about .about-info  h3{
+    font-size: 30px;
+    color: #000a2d;
+    font-weight: 700;
+    margin-bottom: 36px;
+    line-height: 1.5;
+    font-family: rufina,serif;
+}
+
+.about .about-info p{
+    font-family: rubik,sans-serif;
+    color: #10285d;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+    width: 88%;
+}
+
+.about .about-info  h4{
+    font-family: rufina,serif;
+    font-size: 45px;
+    color: #000a2d;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+.about .about-info span{
+    color: #464d65;
+    display: block  ;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin: 30px 0;
+}
+
+.about .about-info a{
+    color: #000a2d;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    display: inline-block;
+
+}
+
+.about .about-info a i{
+    margin-left: 30px;
+    margin-left: 141px;
+
+}
+@media(max-width: 767px){
+    .about{
+        padding: 49px 0 44px 0 ;
+    }
+}
+
+
+/*==========================================end about=============================*/
+
+/*-======================================start services=============================================================*/
+
+.services{
+    background-image: url("../project/img/shape.png");
+    width: 100%;
+    padding: 115px 0;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top left;
+
+}
+
+.services .info .card{
+    text-align: center;
+    padding: 40px 23px;
+    position: relative;
+    z-index: 1;
+}
+.services .info .card::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ff3d1c;
+    z-index: -1;
+    transition: all.3s ease-in;
+    -webkit-transition: all.3s ease-in;
+    -moz-transition: all.3s ease-in;
+    -ms-transition: all.3s ease-in;
+    -o-transition: all.3s ease-in;
+}
+.services .info .card:hover::before{
+    height: 100%;
+}
+
+.services .info .icon{
+    width: 40px;
+    height: 40px;
+    background: #fff4f4;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 45px;
+}
+.services .info .card:hover.icon{
+    background-color: #fff;
+}
+.services .info .card:hover h5 a , .services .info .card:hover p{
+   color: #fff;
+}
+
+
+}
+
+.services .info .icon i{
+    color: #e44239;
+    font-size: 28px;
+}
+
+.services .info h5 a{
+    color: #1c165c;
+    font-family: "rufina",serif;
+    font-size: 28px;
+    font-weight: 500;
+}
+.services .info p{
+    color: #57667e;
+    font-weight: 100;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+/*-======================================end services=============================================================*/
+
+/*========================== start services-img=================================*/
+.services-img .heading h2{
+    font-family: "Rufina",serif;
+    width: 94%;
+}
+
+.services-img .nav-tabs .nav-link.active {
+    border: 0;
+    border-bottom: 2px solid #ff5757;
+}
+
+.services-img .nav-tabs .nav-link{
+    display: block;
+    color: #000f;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 16p
+}
+
+.services-img .nav-link{
+    padding-right: 20px;
+    border: 0;
+}
+ .services-img .nav-tabs{
+     border: 0;
+     position: relative;
+ }
+ .services-img .nav-tabs::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 84%;
+    height: 2px;
+    background: #e7ebf2;
+    z-index: -1;
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/*========================== end services-img=================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------framework----------------------*/
+.btn-danger{
+    background: #ec5b53
+    padding: 16px 20px;
+    color: white !important;
+    border-radius: 6px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    padding: 13px 30px; 
+}
+
+.btn-danger:hover , .btn-danger:focus{
+    box-shadow: none !important;
+}
+
+.btn-danger::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:0;
+    height: 100%;
+    background: #e44239;
+    transition: all.3s ease-in;
+    -webkit-transition: all.3s ease-in;
+    -moz-transition: all.3s ease-in;
+    -ms-transition: all.3s ease-in;
+    -o-transition: all.3s ease-in;
+    z-index: -2;
+}
+
+.btn-danger:hover::before{
+    width: 100%;
+    
+}
+.btn-danger2{
+    border: 1px solid #e3c6c6;
+    color: #464d65;
+    background:none;
+    border-radius:5px;
+    text-transform: capitalize;
+    padding: 13px 40px; 
+    margin-left: 10px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    position: relative;
+}
+.btn-danger2::before{
+    width: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0%;
+    background: #e44239;
+    transition: all.3s ease-in;
+    z-index:-2 ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.btn-danger2:hover::before{
+    height: 100%;
+    
+}
+
+.btn-danger2:hover{
+    color: #fff;
+}
+
+.heading h2{
+    font-family: "rufina",serif;
+    font-size: 46px;
+    font-weight: 700;
+    width: 44%;
+    line-height: 55px;
+}
